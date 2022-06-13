@@ -21,11 +21,11 @@ const ParticlesComponent = (props) => {
       interactivity: {
         events: {
           onClick: {
-            enable: true, // enables the click event
+            enable: false, // enables the click event
             mode: "push", // adds the particles on click
           },
           onHover: {
-            enable: true, // enables the hover event
+            enable: false, // enables the hover event
             mode: "repulse", // make the particles run away from the cursor
           },
         },
@@ -40,12 +40,12 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         links: {
-          enable: true, // enabling this will make particles linked together
+          enable: false, // enabling this will make particles linked together
           distance: 200,
           color: '#000' // maximum distance for linking the particles
         },
         move: {
-          enable: true, // enabling this will make particles move in the canvas
+          enable: false, // enabling this will make particles move in the canvas
           speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {

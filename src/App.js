@@ -1,34 +1,35 @@
 import logo from './42Recordings_Logo_Black+Transparent-01.png';
+import testImage from './testimage.png';
 import './App.css';
 import Particles from './components/Particles';
+import React from "react";
+import Home from './views/Home.js';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
+      <span className="App-header">
+        <span className='Logo-container'>
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="App-link"
-          href="https://particles.js.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          tsParticles
-        </a> */}
-      </header>
+        <Link to="/Home">
+        <button onClick={"sayHello"}>Enter</button>
+        </Link>
+        </span>
+      </span>
       <Particles id="tsparticles" />
     </div>
+
+    <Routes>
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
