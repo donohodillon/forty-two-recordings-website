@@ -38,12 +38,12 @@ const IndividualArtistCard = props => {
       <div
         className="card-container"
         style={{
-          width: "50%",
+          width: "20%",
           border: "solid 3px #d3d3d3",
           margin: "10px auto"
         }}
       >
-        <img src={props.artist.image}/>
+        <img className="artist-image"src={props.artist.image}/>
         <p>
           <strong>{props.artist.name}</strong>
         </p>
