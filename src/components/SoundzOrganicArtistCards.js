@@ -22,13 +22,6 @@ const artists = [
     name: "haven woods.",
     alterEgo: "Dinah Drake",
     alignment: "hero"
-  },
-  {
-    id: 4,
-    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/Forty Two Recordings EPKs (Lizzy_s Artists)/Klvtch the Alien/Photos-Art-Logos/Photos/klvtch at EL.png",
-    name: "Klvtch the Alien",
-    alterEgo: "Selina Kyle",
-    alignment: "villain"
   }
 ];
 

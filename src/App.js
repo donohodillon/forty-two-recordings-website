@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import Home from './views/Home.js';
+import Roster from './views/Roster.js';
 import Landing from './views/Landing.js';
 import Bookings from './views/Bookings';
 import {
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
     <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/Roster" element={<Roster />} />
         <Route path="/Bookings" element={<Bookings />} />
     </Routes>
     </div>
