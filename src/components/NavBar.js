@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './NavBar.css';
+import logoTwo from '../42Recordings_Logo_White+Transparent-02.png';
 
 
 function Navbar() {
@@ -26,7 +27,7 @@ window.addEventListener('resize', showButton);
         <nav className="navbar">
           <div className="navbar-container">
             <Link to='/' className='navbar-logo'>
-              FORTY TWO RECORDINGS <i class="fa-solid fa-record-vinyl"/>
+            <img src={logoTwo} className="App-logo" alt="logo" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -38,8 +39,8 @@ window.addEventListener('resize', showButton);
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                  Services
+                <Link to='/Bookings' className='nav-links' onClick={closeMobileMenu}>
+                  Bookings
                 </Link>
               </li>
               <li className='nav-item'>

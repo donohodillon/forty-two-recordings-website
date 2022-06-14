@@ -34,7 +34,7 @@ const artists = [
 
 const IndividualArtistCard = props => {
   return (
-    <li>
+    <div>
       <div
         className="card-container"
         style={{
@@ -50,17 +50,17 @@ const IndividualArtistCard = props => {
         <p>{props.artist.alterEgo}</p>
         <p>{props.artist.alignment}</p>
       </div>
-    </li>
+    </div>
   );
 };
 
 const SoundzOrganicArtistCards = () => {
   return (
-    <ul style={{ listStyleType: "none" }}>
+    <div className="cards-container"style={{ listStyleType: "none" }}>
       {artists.map(artist => {
         return <IndividualArtistCard artist={artist} key={artist.id} />;
       })}
-    </ul>
+    </div>
   );
 };
 

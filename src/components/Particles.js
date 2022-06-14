@@ -45,7 +45,7 @@ const ParticlesComponent = (props) => {
           color: '#000' // maximum distance for linking the particles
         },
         move: {
-          enable: true, // enabling this will make particles move in the canvas
+          enable: false, // enabling this will make particles move in the canvas
           speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {

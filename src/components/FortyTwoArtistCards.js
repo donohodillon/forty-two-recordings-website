@@ -41,13 +41,14 @@ const artists = [
 
 const IndividualArtistCard = props => {
   return (
-    <li>
+    <div>
       <div
         className="card-container"
         style={{
-          width: "20%",
+          width:"500px",
+          height: "500px",
           border: "solid 3px #d3d3d3",
-          margin: "10px auto"
+          margin: "90px",
         }}
       >
         <img className="artist-image"src={props.artist.image}/>
@@ -57,17 +58,17 @@ const IndividualArtistCard = props => {
         <p>{props.artist.alterEgo}</p>
         <p>{props.artist.alignment}</p>
       </div>
-    </li>
+    </div>
   );
 };
 
 const FortyTwoArtistCards = () => {
   return (
-    <ul style={{ listStyleType: "none" }}>
+    <div className="cards-container">
       {artists.map(artist => {
         return <IndividualArtistCard artist={artist} key={artist.id} />;
       })}
-    </ul>
+    </div>
   );
 };
 
