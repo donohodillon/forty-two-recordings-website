@@ -5,16 +5,16 @@ import FortyTwoArtistCards from "../components/FortyTwoArtistCards";
 import SoundzOrganicArtistCards from "../components/SoundzOrganicArtistCards";
 import Particles from '../components/Particles';
 
-function Home() {
+function Roster() {
   return (
     <div className="Home">
       <Navbar />
-      Home Page
-      <FortyTwoArtistCards />
+      Roster
+      {/* <FortyTwoArtistCards /> */}
       <SoundzOrganicArtistCards />
       <Particles id="tsparticles" />
     </div>
   );
 }
 
-export default Home;
+export default Roster;

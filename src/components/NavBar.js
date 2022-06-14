@@ -5,6 +5,7 @@ import './NavBar.css';
 import logoTwo from '../42Recordings_Logo_White+Transparent-02.png';
 
 
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -33,9 +34,14 @@ window.addEventListener('resize', showButton);
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                <Link to='/AboutUs' className='nav-links' onClick={closeMobileMenu}>
+                  About Us
+                </Link>
+              </li>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                  Home
+                <Link to='/Roster' className='nav-links' onClick={closeMobileMenu}>
+                  Roster
                 </Link>
               </li>
               <li className='nav-item'>
@@ -44,17 +50,17 @@ window.addEventListener('resize', showButton);
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                  Products
+                <Link to='/Shop' className='nav-links' onClick={closeMobileMenu}>
+                  Shop
                 </Link>
-              </li>
+              </li> 
               <li className='nav-item'>
-                <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                  Sign-up
+                <Link to='/Blog' className='nav-links' onClick={closeMobileMenu}>
+                  Blog
                 </Link>
-              </li>
+              </li> 
             </ul>
-            {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+            {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
           </div>
         </nav>
       </>
