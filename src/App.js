@@ -3,6 +3,8 @@ import React from "react";
 import Roster from './views/Roster.js';
 import Landing from './views/Landing.js';
 import Bookings from './views/Bookings';
+import AboutUs from './views/AboutUs';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/Roster" element={<Roster />} />
         <Route path="/Bookings" element={<Bookings />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
     </Routes>
     </div>
     </Router>

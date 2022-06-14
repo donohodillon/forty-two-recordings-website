@@ -1,5 +1,6 @@
 import React from "react";
 import "./FortyTwoArtistCards.css";
+import { BrowserRouter as Router,Link,Route } from "react-router-dom";
 
 const artists = [
   {
@@ -41,6 +42,7 @@ const artists = [
 
 const IndividualArtistCard = props => {
   return (
+    <Link to={"/artist"} className="artist=">
     <div>
       <div
         className="card-container"
@@ -59,6 +61,7 @@ const IndividualArtistCard = props => {
         <p>{props.artist.alignment}</p>
       </div>
     </div>
+  </Link>
   );
 };
 

@@ -4,14 +4,14 @@ import React from "react";
 import Particles from '../components/Particles';
 import logo from '../42Recordings_Logo_Black+Transparent-01.png';
 
-function AboutUs() {
+function IndividualArtist() {
   return (
-    <div className="Home">
+    <div className="individual-artist">
       <Navbar />
-        About Us
+        Artist Here 
       <Particles id="tsparticles" />
     </div>
   );
 }
 
-export default AboutUs;
+export default IndividualArtist;

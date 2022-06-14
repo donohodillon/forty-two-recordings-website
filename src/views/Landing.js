@@ -14,7 +14,7 @@ function Landing() {
       <span className="App-header">
         <span className='Logo-container'>
         <img src={logo} className="App-logo" alt="logo" />
-        <Link to="/Roster">
+        <Link to="/AboutUs">
         <button onClick={"sayHello"}>Enter</button>
         </Link>
         </span>
