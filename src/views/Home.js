@@ -1,7 +1,20 @@
+// import logo from '../42Recordings_Logo_Black+Transparent-01.png';
+import Navbar from "../components/NavBar";
+import React from "react";
+import FortyTwoArtistCards from "../components/FortyTwoArtistCards";
+import SoundzOrganicArtistCards from "../components/SoundzOrganicArtistCards";
+import Particles from '../components/Particles';
 
-
-
-const Home = () => {
-<div>Hello</div>
+function Home() {
+  return (
+    <div className="Home">
+      <Navbar />
+      Home Page
+      <FortyTwoArtistCards />
+      <SoundzOrganicArtistCards />
+      <Particles id="tsparticles" />
+    </div>
+  );
 }
+
 export default Home;

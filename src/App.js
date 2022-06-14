@@ -1,9 +1,8 @@
-import logo from './42Recordings_Logo_Black+Transparent-01.png';
-import testImage from './testimage.png';
 import './App.css';
-import Particles from './components/Particles';
 import React from "react";
 import Home from './views/Home.js';
+import Landing from './views/Landing.js';
+import Bookings from './views/Bookings';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,26 +10,20 @@ import {
   Link
 } from "react-router-dom";
 
+
 function App() {
   return (
     <Router>
     <div className="App">
-      <span className="App-header">
-        <span className='Logo-container'>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Link to="/Home">
-        <button onClick={"sayHello"}>Enter</button>
-        </Link>
-        </span>
-      </span>
-      <Particles id="tsparticles" />
-    </div>
-
     <Routes>
+        <Route path="/" element={<Landing />} />
         <Route path="/Home" element={<Home />} />
-      </Routes>
+        <Route path="/Bookings" element={<Bookings />} />
+    </Routes>
+    </div>
     </Router>
   );
 }
+
 
 export default App;
