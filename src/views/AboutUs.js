@@ -7,14 +7,14 @@ import '../views/AboutUs.css'
 
 
 function AboutUs() {
-  let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  let text = "Forty Two Recordings is the brainchild of artist agent and manager Noah Schreibman located in Tallahassee, FL. The agency represents his strive to assist talented up-and-coming artists achieve all of their goals within the electronic music scene. As the Forty Two artist roster continues to grow, the team will also continue to grow with new agents and managers joining the team to help assist more and more incredible producers & artists. Be on the lookout for Forty Two artists on a lineup near you, their performances are truly not ones to miss! As Forty Two Recordings continues to grow and expand around the nation (and one day the world) our team cannot wait to watch all of our artists and collaborators grow and spread art to audiences everywhere!"
   return (
     <div className="Home">
       <Navbar />
       <div className="text-box">
         <div className="text">
+          <h1>About Us</h1>
         {text}
-        Text
         </div>
       </div>
       <Particles id="tsparticles" />

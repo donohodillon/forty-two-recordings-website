@@ -38,6 +38,12 @@
 .App-link {
   color: #61dafb;
 }
+@font-face {
+  font-family: 'Rugen Expanded';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rugen Expanded'), url('RugenExpanded-DOKGE.woff') format('woff');
+  }
 /* 
 @keyframes App-logo-spin {
   from {
