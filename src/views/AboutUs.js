@@ -14,6 +14,7 @@ function AboutUs() {
       <div className="text-box">
         <div className="text">
         {text}
+        Text
         </div>
       </div>
       <Particles id="tsparticles" />
