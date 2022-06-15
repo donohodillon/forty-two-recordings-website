@@ -11,7 +11,7 @@ function Roster() {
   return (
     <div className="Home">
       <Navbar />
-      <img src={logo} className="App-logo" alt="logo" />
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <FortyTwoArtistCards />
       {/* <SoundzOrganicArtistCards /> */}
       <Particles id="tsparticles" />
