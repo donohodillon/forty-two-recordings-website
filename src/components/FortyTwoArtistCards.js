@@ -5,28 +5,28 @@ import { BrowserRouter as Router,Link,Route } from "react-router-dom";
 const artists = [
   {
     id: 1,
-    image: "./42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/Arcturus EPK/Photos-Videos-Logos/Photos-Graphics/image (2).jpeg",
+    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/Arcturusresized.jpg",
     name: "Arcturus",
     alterEgo: "Diana Prince",
     alignment: "hero"
   },
   {
     id: 2,
-    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/OptiK Sound EPK/Photos-Logos/Photos/Press Shot 1.jpg",
+    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/OSresized.png",
     name: "OptiK Sound",
     alterEgo: "Pamela Lillian Isley",
     alignment: "villain"
   },
   {
     id: 3,
-    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/Collective Unconscious EPK/Photos-Logos-Bio/Speaker View.jpg",
+    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/CUresized.png",
     name: "Collective Unconcious",
     alterEgo: "Dinah Drake",
     alignment: "hero"
   },
   {
     id: 4,
-    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/Spaceship Earth EPK/Photos-Logos/Photos/Spaceship Earth Photo 3.jpeg",
+    image: "/42Stuff/Forty Two Recordings EPKs (Noah_s Artists)/SEresized.png",
     name: "Spaceship Earth",
     alterEgo: "Selina Kyle",
     alignment: "villain"
@@ -42,16 +42,9 @@ const artists = [
 
 const IndividualArtistCard = props => {
   return (
-    <Link to={"/artist"} className="artist=">
-    <div>
+    <Link to={"/Artist/" + props.artist.name} className="artist">
       <div
         className="card-container"
-        style={{
-          width:"500px",
-          height: "500px",
-          border: "solid 3px #d3d3d3",
-          margin: "90px",
-        }}
       >
         <img className="artist-image"src={props.artist.image}/>
         <p>
@@ -60,7 +53,6 @@ const IndividualArtistCard = props => {
         <p>{props.artist.alterEgo}</p>
         <p>{props.artist.alignment}</p>
       </div>
-    </div>
   </Link>
   );
 };

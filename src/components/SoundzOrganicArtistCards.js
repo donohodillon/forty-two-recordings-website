@@ -28,7 +28,7 @@ const artists = [
 
 const IndividualArtistCard = props => {
   return (
-  <Link to={"/artist"} className="artist=">  
+  <Link to={"/Artist" + props.artist.name} className="artist=">  
     <div>
       <div
         className="card-container"

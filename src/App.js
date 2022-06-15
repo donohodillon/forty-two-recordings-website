@@ -4,6 +4,7 @@ import Roster from './views/Roster.js';
 import Landing from './views/Landing.js';
 import Bookings from './views/Bookings';
 import AboutUs from './views/AboutUs';
+import Blog from './views/Blog'
 
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Roster" element={<Roster />} />
         <Route path="/Bookings" element={<Bookings />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Blog" element={<Blog />} />
     </Routes>
     </div>
     </Router>
