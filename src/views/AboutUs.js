@@ -4,6 +4,7 @@ import React from "react";
 import Particles from '../components/Particles';
 import logo from '../42Recordings_Logo_Black+Transparent-01.png';
 import '../views/AboutUs.css'
+import logoTwo from '../42Recordings_Logo_White+Transparent-02.png';
 
 
 function AboutUs() {
@@ -14,8 +15,9 @@ function AboutUs() {
       <div className="text-box">
         <div className="text">
           <h1>About Us</h1>
-        {text}
-        </div>
+        {text}        
+        </div>   
+        <img src={logoTwo} className="App-logo" alt="logo" /> 
       </div>
       <Particles id="tsparticles" />
     </div>
